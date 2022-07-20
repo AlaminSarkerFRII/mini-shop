@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
-import {useParams } from "react-router-dom"
+import {  useNavigate, useParams } from "react-router-dom"
 
-const TicketDetails = () => {
+const ProductDetails = () => {
     const { id } = useParams()
+    const navigate = useNavigate()
     const [product, setProduct] = useState({})
     // const {  title, description, image } = product
-
 
     useEffect(() => {
         const url = `https://fakestoreapi.com/products/${id}`
@@ -31,7 +31,8 @@ const TicketDetails = () => {
                             <h6 class="card-title">{product.category}</h6>
                             <h6 class="card-title">Price: {product.price} $</h6>
                             <p class="card-text">{product.description}</p>
-                            <Button>Booking Now</Button>
+                            <p class="card-text">Rating: {product.rating?.count}</p>
+                            <Button onClick={()=>navigate("/booking")}>Booking Now</Button>
                         </div>
                     </div>
                 </div>
@@ -40,4 +41,4 @@ const TicketDetails = () => {
     );
 };
 
-export default TicketDetails;
+export default ProductDetails;

@@ -1,13 +1,12 @@
 import React from 'react';
-import Ticket from '../Ticket/Ticket';
-
-import Tickets from '../Tickets/Tickets';
+import Footer from '../../components/Footer/Footer';
+import Products from "../../pages/Products/Products"
 
 const Home = () => {
     return (
         <div>
-            
-            <Tickets/>
+            <Products/>
+            <Footer/>
         </div>
     );
 };
