@@ -1,9 +1,6 @@
 import React from 'react';
 import {
     MDBFooter,
-    MDBContainer,
-    MDBCol,
-    MDBRow,
     MDBIcon
 } from 'mdb-react-ui-kit';
 const Footer = () => {
@@ -18,7 +15,7 @@ const Footer = () => {
                             href='#!'
                             role='button'
                         >
-                            <MDBIcon fab-icon='facebook-f' />
+                            <MDBIcon fab icon='facebook-f' />
                         </a>
 
                         <a

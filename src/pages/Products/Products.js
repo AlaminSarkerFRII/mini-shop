@@ -16,7 +16,7 @@ const Products = () => {
 
     return (
         <div className="container text-center">
-            <h2 className="mt-1 mb-5">Search Your Best Products !!</h2>
+            <h2 className="mt-5 mb-5">Search Your Best Products !!</h2>
             <Row xs={1} md={2} lg={3} className="g-4">
             {
                 products.slice(0,15).map((product) => <Product 

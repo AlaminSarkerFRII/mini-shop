@@ -13,9 +13,9 @@ const Product = ({ product }) => {
     }
     return (
         <div>
-            <div className="col text-center ms-auto">
-                <Card className="p-4">
-                    <Card.Img style={{ width: "200px", height: "200px" }} variant="top" src={image} />
+            <div className="col text-center">
+                <Card className="p-4 ms-auto">
+                    <Card.Img style={{ width: "200px", height: "200px" , margin:"auto" }} variant="top" src={image} />
                     <Card.Body>
                         <Card.Title>{title.slice(0,20)}</Card.Title>
                         <h6>Price : {price}$</h6>
