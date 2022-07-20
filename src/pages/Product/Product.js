@@ -16,7 +16,7 @@ const Product = ({ product }) => {
             <div className="col text-center">
                 <Card className="p-4 ms-auto">
                     <Card.Img style={{ width: "200px", height: "200px" , margin:"auto" }} variant="top" src={image} />
-                    <Card.Body>
+                    <Card.Body className="ms-auto">
                         <Card.Title>{title.slice(0,20)}</Card.Title>
                         <h6>Price : {price}$</h6>
                         <Card.Text className='text-md-start lh-sm'>
